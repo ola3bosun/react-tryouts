@@ -1,0 +1,29 @@
+.magnetLines-container {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+  
+    justify-items: center;
+    align-items: center;
+  
+    width: 100vw;
+    height: 100vh;
+    border-radius: 1rem;
+  }
+  
+  .magnetLines-container span {
+    display: block;
+    transform-origin: center;
+    will-change: transform;
+    transform: rotate(var(--rotate));
+    border: 5px;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    min-height: 100vh;
+  }
+  
